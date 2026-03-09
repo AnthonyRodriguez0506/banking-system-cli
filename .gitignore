@@ -1,8 +1,11 @@
 ### IntelliJ IDEA ###
 out/
+*.class
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+.idea/
+banking-system-cli.iml
 
 ### Eclipse ###
 .apt_generated
