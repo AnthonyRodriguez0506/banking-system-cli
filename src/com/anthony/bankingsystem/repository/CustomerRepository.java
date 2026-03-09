@@ -3,14 +3,6 @@ import java.util.HashMap;
 
 public class CustomerRepository {
 
-        public String searchClient(String ID) {
-                return users.get(ID);
-        }
-
-        public Double searchBalance(String ID) {
-                return balance.get(ID);
-        }
-
         HashMap<String, String> users = new HashMap<>();
         HashMap<String, Double> balance = new HashMap<>();
 
@@ -36,5 +28,17 @@ public class CustomerRepository {
                 balance.put("031-7645291-4", 90860.90);
                 balance.put("223-8192735-1", 67340.55);
                 balance.put("054-6738291-9", 25010.35);
+        }
+
+        public String searchClient(String ID) {
+                return users.get(ID);
+        }
+
+        public Double searchBalance(String ID) {
+                return balance.get(ID);
+        }
+
+        public void updateBalance(String ID, Double newBalance) {
+                balance.put(ID, newBalance);
         }
 }
