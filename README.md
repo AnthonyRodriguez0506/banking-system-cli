@@ -15,7 +15,6 @@ A simple CLI banking system written in Java.
 
 The project is organized using a simple layered structure:
 
-- model → domain entities
 - repository → in-memory data storage
 - service → business logic
 - main → application entry point
