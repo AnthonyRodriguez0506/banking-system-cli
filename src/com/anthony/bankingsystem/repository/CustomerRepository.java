@@ -6,6 +6,10 @@ public class CustomerRepository {
         HashMap<String, String> users = new HashMap<>();
         HashMap<String, Double> balance = new HashMap<>();
 
+        public HashMap<String, String> getUsers() {
+                return users;
+        }
+
         public void initializeCustomers() {
                 users.put("402-1093656-9", "Anthony Rodríguez");
                 users.put("031-8472651-3", "María Fernández");
